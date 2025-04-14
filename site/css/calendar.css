@@ -1,0 +1,66 @@
+/* Calendar custom CSS */
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+
+.cal-month-name {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+}
+
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  padding: 0;
+}
+
+.cal-btn:not([disabled]) {
+  cursor: pointer;
+}
+
+.cal-btn:hover {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.cal-btn[disabled] {
+  opacity: .5;
+}
+
+.w-340px {
+  width: 340px !important;
+}
+
+
+a small {
+  color: white !important;
+}
+
+a svg {
+  fill: black !important;
+}
+
+
+.rainbow {
+  color: rgb(255, 255, 255); 
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* Mejora legibilidad sobre colores claros */
+  
+  background: linear-gradient(
+    to right,
+    #fd2727,
+    #fb932b,
+    #ffff54,
+    #4afd4a,
+    #3838fe,
+    #5c2f7c,
+    #ad5ad1
+  );
+}
