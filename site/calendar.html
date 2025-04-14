@@ -16,6 +16,15 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="calendar3" viewBox="0 0 16 16">
+        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"></path>
+        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+      </symbol>
+      <symbol id="geo-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"></path>
+      </symbol>
+    </svg>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
       <div class="preloader-body">
@@ -80,7 +89,7 @@
           <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
             
             <!-- May -->
-            <div class="dropdown-menu d-block position-static p-2 mx-0 shadow rounded-3 w-340px" data-bs-theme="light">
+            <div class="d-block p-2 mx-0 shadow rounded-3 w-340px" data-bs-theme="light">
               <div class="d-grid gap-1">
                 <div class="cal">
                   <div class="cal-month">
@@ -118,8 +127,8 @@
                     <button class="btn cal-btn" type="button">14</button>
                     <button class="btn cal-btn" type="button">15</button>
                     <button class="btn cal-btn" type="button">16</button>
-                    <button class="btn cal-btn  btn-secondary" type="button">17</button>
-                    <button class="btn cal-btn  btn-secondary" type="button">18</button>
+                    <button class="btn cal-btn rainbow" type="button">17</button>
+                    <button class="btn cal-btn rainbow" type="button">18</button>
 
                     <button class="btn cal-btn" type="button">19</button>
                     <button class="btn cal-btn" type="button">20</button>
@@ -144,7 +153,7 @@
             </div>
 
             <!-- June -->
-            <div class="dropdown-menu d-block position-static p-2 mx-0 shadow rounded-3 w-340px" data-bs-theme="light">
+            <div class="d-block p-2 mx-0 shadow rounded-3 w-340px" data-bs-theme="light">
               <div class="d-grid gap-1">
                 <div class="cal">
                   <div class="cal-month">
@@ -185,13 +194,13 @@
                     <button class="btn cal-btn" type="button">14</button>
                     <button class="btn cal-btn" type="button">15</button>
 
-                    <button class="btn cal-btn btn-secondary" type="button">16</button>
-                    <button class="btn cal-btn btn-secondary" type="button">17</button>
-                    <button class="btn cal-btn btn-secondary" type="button">18</button>
-                    <button class="btn cal-btn btn-secondary" type="button">19</button>
-                    <button class="btn cal-btn btn-secondary" type="button">20</button>
-                    <button class="btn cal-btn btn-secondary" type="button">21</button>
-                    <button class="btn cal-btn btn-secondary" type="button">22</button>
+                    <button class="btn cal-btn rainbow" type="button">16</button>
+                    <button class="btn cal-btn rainbow" type="button">17</button>
+                    <button class="btn cal-btn rainbow" type="button">18</button>
+                    <button class="btn cal-btn rainbow" type="button">19</button>
+                    <button class="btn cal-btn rainbow" type="button">20</button>
+                    <button class="btn cal-btn rainbow" type="button">21</button>
+                    <button class="btn cal-btn rainbow" type="button">22</button>
 
                     <button class="btn cal-btn" type="button">23</button>
                     <button class="btn cal-btn" type="button">24</button>
@@ -208,6 +217,173 @@
             </div>
           </div>
       </section>
+      <!-- Activities -->
+      <div class="container-fluid">
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- Act 1 -->
+          <div class="col-sm-12 col-lg-6 bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center" style="padding: 10px;">
+            <div class="me-md-3 my-3 p-3">
+              <h2 class="display-5">Evento 1</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/march-2024/group-of-people.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eslogan o frase</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <a class="d-flex align-items-center me-3" href="https://maps.app.goo.gl/vs7VKsZihN6NaSJP8" target="_blank">
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Ubicación</small>
+                    </li>
+                  </a>
+                  
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Duration"><use xlink:href="#calendar3"></use></svg>
+                      <small>17/May</small>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Act 2 -->
+          <div class="col-sm-12 col-lg-6 bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center" style="padding: 10px;">
+            <div class="me-md-3 my-3 p-3">
+              <h2 class="display-5">Evento 1</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/march-2024/group-of-people.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eslogan o frase</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <a class="d-flex align-items-center me-3" href="https://maps.app.goo.gl/vs7VKsZihN6NaSJP8" target="_blank">
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Ubicación</small>
+                    </li>
+                  </a>
+                  
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Duration"><use xlink:href="#calendar3"></use></svg>
+                      <small>17/May</small>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+          <!-- Act 1 -->
+          <div class="col-sm-12 col-lg-6 bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center" style="padding: 10px;">
+            <div class="me-md-3 my-3 p-3">
+              <h2 class="display-5">Evento 1</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/march-2024/group-of-people.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eslogan o frase</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <a class="d-flex align-items-center me-3" href="https://maps.app.goo.gl/vs7VKsZihN6NaSJP8" target="_blank">
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Ubicación</small>
+                    </li>
+                  </a>
+                  
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Duration"><use xlink:href="#calendar3"></use></svg>
+                      <small>17/May</small>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Act 2 -->
+          <div class="col-sm-12 col-lg-6 bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center" style="padding: 10px;">
+            <div class="me-md-3 my-3 p-3">
+              <h2 class="display-5">Evento 1</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/march-2024/group-of-people.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eslogan o frase</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <a class="d-flex align-items-center me-3" href="https://maps.app.goo.gl/vs7VKsZihN6NaSJP8" target="_blank">
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Ubicación</small>
+                    </li>
+                  </a>
+                  
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Duration"><use xlink:href="#calendar3"></use></svg>
+                      <small>17/May</small>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row">
+          <!-- Act 1 -->
+          <div class="col-sm-12 col-lg-6 bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center" style="padding: 10px;">
+            <div class="me-md-3 my-3 p-3">
+              <h2 class="display-5">Evento 1</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/march-2024/group-of-people.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eslogan o frase</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <a class="d-flex align-items-center me-3" href="https://maps.app.goo.gl/vs7VKsZihN6NaSJP8" target="_blank">
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Ubicación</small>
+                    </li>
+                  </a>
+                  
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Duration"><use xlink:href="#calendar3"></use></svg>
+                      <small>17/May</small>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Act 2 -->
+          <div class="col-sm-12 col-lg-6 bg-body-tertiary pt-3 px-3 pt-md-5 px-md-5 text-center" style="padding: 10px;">
+            <div class="me-md-3 my-3 p-3">
+              <h2 class="display-5">Evento 1</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/march-2024/group-of-people.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Eslogan o frase</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <a class="d-flex align-items-center me-3" href="https://maps.app.goo.gl/vs7VKsZihN6NaSJP8" target="_blank">
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Ubicación</small>
+                    </li>
+                  </a>
+                  
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="2em" height="2em" role="img" aria-label="Duration"><use xlink:href="#calendar3"></use></svg>
+                      <small>17/May</small>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Page Footer-->
       <footer class="section footer-minimal context-dark">
         <div class="container wow-outer">
