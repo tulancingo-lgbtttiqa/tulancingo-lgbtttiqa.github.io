@@ -48,6 +48,10 @@ a svg {
   fill: black !important;
 }
 
+.btn.cal-btn.rainbow a {
+  color: black;
+}
+
 
 .rainbow {
   color: rgb(255, 255, 255); 
